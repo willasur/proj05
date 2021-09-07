@@ -19,7 +19,7 @@ namespace ConsoleAppQ
             };
 
 
-            Console.WriteLine("Greetings User, Please Select");
+            Console.WriteLine("Greetings User, Please select a Shape");
             var typeOfShape = new List<string>();
             typeOfShape.Add("A) Square");
             typeOfShape.Add("B) Rectangle");
@@ -32,22 +32,21 @@ namespace ConsoleAppQ
             }
             while (true)
             {
-                Console.WriteLine("type A, B, C or L");
+                Console.WriteLine("Type A, B, C or L");
                 string chosenShape = Console.ReadLine();
-                var sh = new Shape();
 
                 if (chosenShape.ToUpper() == "A")
                 {
-                    Console.WriteLine("type color");
+                    Console.WriteLine("Type Color");
                     Console.ReadLine();
                     Console.WriteLine("enter side");
                     int side1 = Convert.ToInt32(Console.ReadLine());
                     var sq = new Square(side1);
-                    Console.WriteLine(value:$"Area is {sq.GetArea()}");
+                    Console.WriteLine(value: $"Area is {sq.GetArea()}");
                 }
                 else if (chosenShape.ToUpper() == "B")
                 {
-                    Console.WriteLine("type color");
+                    Console.WriteLine("Type A Color");
                     Console.ReadLine();
                     Console.WriteLine("enter length side");
                     int side1 = Convert.ToInt32(Console.ReadLine());
@@ -58,7 +57,7 @@ namespace ConsoleAppQ
                 }
                 else if (chosenShape.ToUpper() == "C")
                 {
-                    Console.WriteLine("type color");
+                    Console.WriteLine("Type A Color");
                     Console.ReadLine();
                     Console.WriteLine("enter first side");
                     int side1 = Convert.ToInt32(Console.ReadLine());
@@ -71,9 +70,10 @@ namespace ConsoleAppQ
                 }
                 else if (chosenShape.ToUpper() == "L")
                 {
-                    Console.WriteLine($"{sh.Name}");
+                    //var sh = new Shape();
+                    Console.WriteLine($"Thank you");// not working
                     break;
-                }           
+                }
 
             }
         }   

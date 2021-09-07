@@ -13,7 +13,7 @@ namespace ConsoleAppQ
         public int Area { get; set; }
 
 
-        public string nameShape()
+        public override string ToString()//not sure
         {
             return this.Name;
         }
